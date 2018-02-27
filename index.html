@@ -24,13 +24,18 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- IE < 10 Warning -->
-    <!--[if lt IE 10]>
-    <div class="ie-warning alert alert-danger alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-    <![endif]-->  
+ 
+ 	<!-- Displays warning if IE/Edge/Safari 2 versions behind or if FF/Chrome/Opera 4 versons behind -->
+     <script> 
+    var $buoop = {notify:{e:-4,f:-4,o:-4,s:-2,c:-4},insecure:true,unsupported:true,api:5}; 
+    function $buo_f(){ 
+     var e = document.createElement("script"); 
+     e.src = "//browser-update.org/update.min.js"; 
+     document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
 
   </head>
 
