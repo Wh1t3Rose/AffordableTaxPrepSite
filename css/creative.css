@@ -196,6 +196,12 @@ header.masthead p {
   }
 }
 
+@media all and (-ms-high-contrast:none)
+     {
+     header.masthead h1 { padding-top: 36% } /* IE10 */
+     *::-ms-backdrop header.masthead h1 { padding-top: 36% } /* IE11 */
+     }
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
